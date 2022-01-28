@@ -1,0 +1,10 @@
+
+
+https://cuboulder-csci-3308.herokuapp.com/Labs/lab3_git_scripting/
+https://cuboulder-csci-3308.herokuapp.com/Labs/lab4_html_css/
+https://cuboulder-csci-3308.herokuapp.com/Labs/lab5_javascript/index.html
+https://cuboulder-csci-3308.herokuapp.com/Labs/lab6_postgresql/index.html
+https://cuboulder-csci-3308.herokuapp.com/Labs/lab7_nodejs/index.html
+https://cuboulder-csci-3308.herokuapp.com/Labs/lab8_webservices/index.html
+https://cuboulder-csci-3308.herokuapp.com/Labs/lab9_webservices_test/index.html
+https://cuboulder-csci-3308.herokuapp.com/Labs/lab10_heroku_setup/index.html

@@ -1,0 +1,7 @@
+<% if(data){
+    var table=''
+    data.forEach(function(each){
+        table+='<tr> <td>'+each.artist+'</td><td>'+each.review+'</td><td>'+each.review_date+'</td></tr>'
+    }); %>
+    <%- table %>
+<% } %>

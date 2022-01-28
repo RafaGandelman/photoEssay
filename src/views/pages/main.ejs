@@ -1,0 +1,67 @@
+<%- include('../partials/header'); -%>
+<body>
+    <%- include('../partials/menu'); -%>
+    <% if(error){ %>
+        <div class="alert alert-danger">Artist name not found</div>
+        <% } else if(search){ %>
+            <div class="container">
+                <img src=<%- imageLink %> alt="No banner image">
+                <h5><%- bandName %></h5>
+                <table>
+                    <tr>
+                        <td>
+                            <a class="btn btn-primary text-white" href=<%- link %>>Artist Website</a>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#review">Add Review</button>
+                        </td>
+                    </tr>
+                </table>
+                <h6>Formation Year</h6>
+                <p><%- year%></p>
+                <h6>Genres</h6>
+                <p><%- genre %></p>
+                <h6>Bio</h6>
+                <p><%- bio %></p>
+            </div>
+        <% } %>
+        <div class="modal fade" id="review" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Add Review</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form class="" action="/addReview" method="post">
+                    <div class="modal-body">
+                        <table>
+                            <tr>
+                                <td>
+                                    <label for="band">Band Name</label>
+                                </td>
+                                <td>
+                                    <input id="band" class="form-control" type="text" value="<%- bandName %>" readonly="readonly" name="band">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>  
+                                    <label for="reviewBand">Band Name</label>
+                                </td>
+                                <td>
+                                    <textarea class="form-control" id="reviewBand" cols="44" rows="3" name="addReview"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="modal-footer">
+                        <input class="btn btn-primary" type="submit" name="submit" value = "Add Review"/>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>    
+
+
+<%- include('../partials/footer'); -%>
